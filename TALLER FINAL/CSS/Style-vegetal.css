@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Patrick Hand', cursive;
+    background: rgb(231, 231, 231);
+  }
+  
+  
+  .contenedor {
+    width: 100%;
+    max-width: 10000px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+  
+    grid-template-areas: "header header header header"
+      "section section section section"
+      "contenido contenido sidebar sidebar"
+      "widget widget widget widget";
+  }
+  
+  .contenedor .header,
+  .contenedor .section,
+  .contenedor .contenido,
+  .contenedor .sidebar,
+  .contenedor .widget {
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .contenedor .header {
+    padding: 0;
+    margin: 0;
+    grid-area: header;
+  }
+  
+  .contenedor .section {
+    grid-area: section;
+    text-align: center;
+  }
+  
+  .contenedor .contenido {
+    text-align: center;
+    min-height: 150px;
+    grid-area: contenido;
+  }
+  
+  .contenedor .sidebar {
+    text-align: center;
+    min-height: 100px;
+    grid-area: sidebar;
+  }
+  
+  .contenedor .widget {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: widget;
+  }
+  
+  
+  /* HEADER */
+  
+  .logo {
+    width: 6%;
+    position: absolute;
+    margin-left: 20px;
+    bottom: 87.5%;
+  }
+  
+  @font-face {
+    font-family: FuenteTitulo;
+    src: url(../FUENTES/FuenteTitulo.ttf);
+  }
+  
+  .nombre {
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    margin-left: 140px;
+    line-height: 1em;
+    bottom: 87.5%;
+    font-family: FuenteTitulo;
+  }
+  
+  .menu {
+    background: #9ff1bd;
+    text-align: right;
+    padding: 18px;
+    padding-right: 30px;
+    box-shadow: 0 0 6px #000;
+    margin-bottom: 20px;
+  }
+  
+  .menu a {
+    display: inline-block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-shadow: 0 0 2px rgb(243, 15, 15);
+    transition: all .3s;
+  }
+  
+  .icon-add-mundo:before {
+    content: "\1f30e";
+    font-size: 34px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .icon-add-mundo:hover {
+    text-shadow: 0 0 3px #0074BA;
+  }
+  
+  .icon-add-lobo:before {
+    content: "\1f43a";
+    font-size: 34px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .icon-add-lobo:hover {
+    text-shadow: 0 0 4px #D3D3D3;
+  }
+  
+  .icon-add-tigre:before {
+    content: "\1f42f";
+    font-size: 34px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .icon-add-tigre:hover {
+    text-shadow: 0 0 3px #FF822D;
+  }
+  
+  .icon-add-koala:before {
+    content: "\1f428";
+    font-size: 34px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .icon-add-koala:hover {
+    text-shadow: 0 0 3px #1C1C1C;
+  }
+  
+  .icon-add-palmera:before {
+    content: "\1f334";
+    font-size: 34px;
+    cursor: pointer;
+    text-shadow: 0 0 3px #000;
+  }
+  
+  .icon-add-palmera:hover {
+    text-shadow: 0 0 3px #6D4534;
+  }
+  
+  :root {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* SECTION */
+  
+  .section {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000;
+  }
+  
+  @font-face {
+    font-family: FuenteParrafo;
+    src: url(../FUENTES/FuenteParrafo.otf);
+  }
+  
+  .titulo {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: FuenteParrafo;
+    text-align: center;
+  }
+  
+  .texto {
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
+  .donas {
+    width: 47%;
+    margin: 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 0 6px #4c7bbc;
+  }
+  
+  
+  /* INGREDIENTES */
+  
+  .subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #b39c89;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    font-size: 50px;
+    text-shadow: 2px 0 1px rgb(92, 92, 92);
+  }
+  
+  .icon-planta:before {
+    content: "\1f331";
+    font-size: 22px;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.3em rgb(155, 151, 151);
+    padding-right: 10px;
+  }
+  
+  
+  
+  .lista-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-hoja:before {
+    content: "\1f341";
+    font-size: 22px;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.3em  rgb(155, 151, 151);
+    padding-right: 10px;
+  }
+  
+  .icon-si:before {
+    content: "\1f5f9";
+    font-size: 22px;
+    cursor: pointer;
+    text-shadow: 0.1em 0.1em 0.3em  rgb(155, 151, 151);
+    padding-right: 10px;
+  }
+  .lista-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+    text-align: left;
+    font-size: 27px;
+  }
+  
+  
+  /* GALERIA */
+  
+  .contend {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0px 0;
+  }
+  
+  .contenedor-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  
+  .img-galeria {
+    width: 10%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .img-thumbnail:hover {
+    transform: scale(1.1);
+  
+  }
+  
+  /* RESPONSIVE */
+  
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      grid-template-areas: "header header header header"
+        "section section section section"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar sidebar"
+        "widget widget widget widget"
+    }
+  }
+
+
+  .icon-hoja {
+    outline: none;
+    text-decoration: none;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    color: black;
+  }
+
+ 
+  .icon-hoja:hover {
+    background: rgb(138, 204, 173);
+  }
+  
+  .icon-hoja:active {
+    background: rgb(155, 151, 151);
+    color: white;
+  }
+
+
+  .icon-planta {
+    outline: none;
+    text-decoration: none;
+    width: 19.5%;
+    margin-right: 0.625%;
+    text-align: center;
+    color: black;
+  }
+
+ 
+  .icon-planta:hover {
+    background: rgb(138, 204, 173);
+  }
+  
+  .icon-planta:active {
+    background: rgb(155, 151, 151);
+    color: white;
+  }

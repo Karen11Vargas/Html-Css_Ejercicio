@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fundación Pasitos de Amor </title>
+    <link rel="stylesheet" href="CSS/Style_Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="IMG/logo.png">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <header class="header" id="inicio">
+            <img src="IMG/logo.png" class="logo"> 
+            <h3 class="nombre"> Fundacion Pasitos <br> de Amor </h3>
+            <nav class="menu">
+                <a href="index.html"> <span class="icon-add-mundo"> Inicio </span> </a>
+                <a href="Carnivoros.html"> <span class="icon-add-lobo"> Carnívoros </span> </a>
+                <a href="omnivoros.html"> <span class="icon-add-tigre"> Omnívoros </span> </a>
+                <a href="Herbivoros.html"> <span class="icon-add-koala"> Herbívoros </span> </a>
+                <a href="vegetales.html"> <span class="icon-add-palmera"> Vegetal </span> </a>
+            </nav>
+            <div class="onda"> 
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"></path>
+                </svg>
+            </div>
+        </header>
+
+        <main class="contenido" id="ingredientes">
+            <h2 class="subtitulo"> Sobre Nosotros </h2>
+            <div class="lista-1">
+                <ul class="lista-ingredientes">
+                    <li> <span class="icon-dedo"> Amamos los animales </span> </li> 
+                    <li> <span class="icon-dedo"> Fundacion de amor</span> </li>
+                    <li> <span class="icon-dedo"> Laura Romero </span> </li>
+                    <li> <span class="icon-dedo"> Karen Vargas </span> </li>
+                
+                </ul> 
+             </div>
+        </main>
+
+        <aside class="sidebar" id="ingredientes">
+            <h2 class="subtitulo"> ¿Qué quieres saber sobre los animales? </h2>
+          
+                <form action="https://formspree.io/f/mqknobaz" method="POST" name="formDatosPersonales">
+                    <label for="nombre"> Nombre: </label>
+                    <input type="text" placeholder="Ingresa tu nombre" name="name" id="nombre" required>
+
+                    <label> Correo: </label>
+                    <input type="email" placeholder="Ingresa tu correo" name="email" id="email" required>
+
+                    <label> Mensaje</label>
+                    <textarea placeholder="Ingresa aquí lo que quieres saber" name="message" required > </textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+           
+        </aside>
+
+    </div>
+
+</body>
+</html>
